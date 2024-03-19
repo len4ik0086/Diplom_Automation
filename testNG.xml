@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test verbose="2" preserve-order="true"-->
+<!--          name="Login Tests">-->
+<!--        <classes>-->
+<!--            <class name="diplom.tests.LoginTests">-->
+<!--                <methods>-->
+<!--                    <include name="wrongPasswordLoginTest"/>-->
+<!--                    <include name="wrongLoginNameLoginTest"/>-->
+<!--                    <include name="wrongLoginNameWrongLoginTest"/>-->
+<!--                    <include name="blankLoginNameLoginTest"/>-->
+<!--                    <include name="loginNameBlankLoginTest"/>-->
+<!--                    <include name="blankLoginNameBlankLoginTest"/>-->
+<!--                    <include name="successfulLoginTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test verbose="2" preserve-order="true"
+          name="SearchTests">
+        <classes>
+            <class name="diplom.tests.SearchTests">
+                <methods>
+                    <include name="searchValueCompareInDifferentResults"/>
+                    <include name="positiveSearchFieldIsAvailable"/>
+                    <include name="positiveSearchWithEmptyValue"/>
+                    <include name="positiveSearchBarAbilityAfterClick"/>
+                    <include name="negativeSearchWithSpecialSymbols"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
