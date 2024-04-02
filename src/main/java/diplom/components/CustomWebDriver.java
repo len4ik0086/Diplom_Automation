@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
 
-public class HomePage {
+public class CustomWebDriver {
     public WebDriver webDriver;
 
     @BeforeMethod
