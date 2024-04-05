@@ -1,12 +1,12 @@
 package diplom.tests;
 
-import diplom.components.LoginPage;
+import diplom.pages.LoginPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class LoginTests extends diplom.components.CustomWebDriver {
+public class LoginTests extends BaseTest {
 
     private LoginPage loginPage;
 

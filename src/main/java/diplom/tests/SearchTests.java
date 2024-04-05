@@ -1,6 +1,6 @@
 package diplom.tests;
 
-import diplom.components.HomePage;
+import diplom.pages.HomePage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class SearchTests extends diplom.components.CustomWebDriver {
+public class SearchTests extends BaseTest {
 
     private HomePage homePage;
 

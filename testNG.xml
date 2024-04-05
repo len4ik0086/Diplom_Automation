@@ -29,4 +29,15 @@
             </class>
         </classes>
     </test>
+    <test verbose="2" preserve-order="true"
+          name="Header Tests">
+        <classes>
+            <class name="diplom.tests.HeaderTests">
+                <methods>
+                    <include name="jobPageCheckHeader"/>
+                    <include name="blogPageCheckHeader"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
 </suite>
