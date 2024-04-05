@@ -17,8 +17,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void wrongPasswordLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("panivchnyn@gmail.com");
         loginPage.enterPassword("wrongPassword");
@@ -28,8 +28,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void wrongLoginNameLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("wrongname");
         loginPage.enterPassword("Pass2210");
@@ -39,8 +39,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void wrongLoginNameWrongLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("wrongName");
         loginPage.enterPassword("wrongPassword");
@@ -50,8 +50,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void blankLoginNameLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("");
         loginPage.enterPassword("Pass2210");
@@ -61,8 +61,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void loginNameBlankLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("panivchnyn@gmail.com");
         loginPage.enterPassword("");
@@ -72,8 +72,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 1)
     public void blankLoginNameBlankLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("");
         loginPage.enterPassword("");
@@ -83,8 +83,8 @@ public class LoginTests extends BaseTest {
 
     @Test(priority = 2)
     public void successfulLoginTest() {
-        loginPage.open();
-        loginPage.consentForm();
+        open();
+        consentForm();
         loginPage.loginForm();
         loginPage.enterUserName("panivchnyn@gmail.com");
         loginPage.enterPassword("Pass2210");

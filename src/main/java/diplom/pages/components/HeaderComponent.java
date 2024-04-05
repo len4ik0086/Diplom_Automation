@@ -17,4 +17,8 @@ public class HeaderComponent {
     public void navigateToBlogPage() {
         webDriver.findElement(By.xpath("//a[contains(@href,'/blog')]")).click();
     }
+    public void navigateToLinksPage() {
+        webDriver.findElement(By.xpath("//a[contains(@href,'/links')]")).click();
+    }
+
 }

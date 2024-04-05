@@ -3,16 +3,12 @@ package diplom.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPage{
+public class LoginPage {
 
     private final WebDriver webDriver;
 
     public LoginPage(WebDriver driver) {
         this.webDriver = driver;
-    }
-
-    public void open() {
-        webDriver.get("https://www.i.ua/");
     }
 
     public void loginForm() {

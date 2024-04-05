@@ -11,14 +11,6 @@ public class HomePage {
         this.webDriver = driver;
     }
 
-    public void open() {
-        webDriver.get("https://www.i.ua/");
-    }
-
-    public void consentForm() {
-        webDriver.findElement(By.xpath("//p[@class='fc-button-label']")).click();
-    }
-
     public WebElement searchField() {
         return webDriver.findElement(By.xpath("//input[@id='searchQ']"));
     }

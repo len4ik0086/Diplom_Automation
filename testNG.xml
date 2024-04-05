@@ -36,6 +36,7 @@
                 <methods>
                     <include name="jobPageCheckHeader"/>
                     <include name="blogPageCheckHeader"/>
+                    <include name="linksPageCheckHeader"/>
                 </methods>
             </class>
         </classes>

@@ -20,8 +20,8 @@ public class SearchTests extends BaseTest {
 
     @Test(priority = 1)
     public void searchFieldIsAvailable() {
-        homePage.open();
-        homePage.consentForm();
+        open();
+        consentForm();
         boolean isDisplayed = homePage.searchField().isDisplayed();
         Assert.assertTrue(isDisplayed, "Search field is absent");
     }
@@ -30,8 +30,8 @@ public class SearchTests extends BaseTest {
     public void searchWithEmptyValue() {
         String searchValue = "";
 
-        homePage.open();
-        homePage.consentForm();
+        open();
+        consentForm();
 
         WebElement input = homePage.searchField();
         input.clear();
@@ -60,8 +60,8 @@ public class SearchTests extends BaseTest {
     @Test(dataProvider = "searchSymbols", priority = 2)
     public void searchWithSpecialSymbols(String searchValue) {
 
-        homePage.open();
-        homePage.consentForm();
+        open();
+        consentForm();
 
         WebElement input = homePage.searchField();
         input.clear();

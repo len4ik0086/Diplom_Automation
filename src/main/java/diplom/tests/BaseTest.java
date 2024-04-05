@@ -1,5 +1,6 @@
 package diplom.tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -18,7 +19,14 @@ public class BaseTest {
 
         webDriver = new ChromeDriver(options);
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    }
 
+    public void open() {
+        webDriver.get("https://www.i.ua/");
+    }
+
+    public void consentForm() {
+        webDriver.findElement(By.xpath("//p[@class='fc-button-label']")).click();
     }
 
     @AfterMethod
